@@ -20,21 +20,16 @@
   <body
 <!-- Modal -->
 
-  <div class="modal-dialog">
-
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Inicio de sesión</h4>
+        <h4 class="modal-title">Registro</h4>
       </div>
       <div class="modal-body">
 
-<form class="form-horizontal">
+<form action="../procesamiento/registro_usuarios.php" id="RegUsu" method="POST" class="form-horizontal">
 <fieldset>
-
-<!-- Form Name -->
-<legend>Registro</legend>
 
 <!-- Text input-->
 <div class="form-group">
@@ -74,15 +69,6 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="Email">Email</label>  
-  <div class="col-md-5">
-  <input id="Email" name="Email" type="text" placeholder="" class="form-control input-md" required="">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
   <label class="col-md-4 control-label" for="Direccion">Dirección</label>  
   <div class="col-md-6">
   <input id="Direccion" name="Direccion" type="text" placeholder="" class="form-control input-md" required="">
@@ -91,7 +77,7 @@
 </div>
 
 <div class="form-group">
-  <label class="col-md-4 control-label" for="Nom_Usuario"></label>  
+  <label class="col-md-4 control-label" for="Email"></label>  
   <div class="col-md-5">
   <span class="help-block"><br>Datos de ingreso</span>  
   </div>
@@ -99,9 +85,10 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="Nom_Usuario">Usuario</label>  
+  <label class="col-md-4 control-label" for="Email">Email</label>  
   <div class="col-md-5">
-  <input id="Nom_Usuario" name="Nom_Usuario" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="Email" name="Email" type="text" placeholder="" class="form-control input-md" required="">
+    
   </div>
 </div>
 
@@ -118,7 +105,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="btnEnviar"></label>
   <div class="col-md-4">
-    <button id="btnEnviar" name="btnEnviar" class="btn btn-success">Enviar</button>
+    <button type="submit" id="btnEnviar" name="btnEnviar" class="btn btn-success">Enviar</button>
   </div>
 </div>
 
@@ -130,8 +117,6 @@
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
-
-  </div>
       
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="../lib/jquery-3.2.1.min.js"></script>

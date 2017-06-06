@@ -52,9 +52,9 @@
         <li><a href="modal_registro.php" data-toggle="modal" data-target="#modal_registro">Registrarse</a></li>
 
 <!-- Modal -->
-<div class="modal fade" id="modal_registro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
+<div action="../procesamiento/registro_usuarios.php" class="modal fade" id="modal_registro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div action="../procesamiento/registro_usuarios.php" class="modal-dialog">
+        <div action="../procesamiento/registro_usuarios.php" class="modal-content">
             
         </div> <!-- /.modal-content -->
     </div> <!-- /.modal-dialog -->
